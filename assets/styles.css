@@ -269,3 +269,25 @@ select{padding-right:34px}
 
   body.menu-open { overflow: hidden; }
 }
+/* ===== FINAL MOBILE NAV KILL SWITCH ===== */
+@media (max-width: 768px){
+
+  header .nav-links,
+  .nav .nav-links,
+  nav.nav-links{
+    display:none !important;
+    visibility:hidden !important;
+    height:0 !important;
+    overflow:hidden !important;
+  }
+
+  .mobile-menu-btn{
+    display:inline-flex !important;
+    z-index:10001;
+  }
+
+  .mobile-overlay{
+    z-index:10000;
+  }
+
+}
